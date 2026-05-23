@@ -20,7 +20,7 @@ async function ValidateAdmin() {
 
         if (!response.ok || !data.success) {
             localStorage.removeItem("impact_admin");
-            window.location.href = "../admin-login";
+            window.location.href = "https://nx7-vault-core.impactacademy.site";
             return { success: false, admin: null };
         }
 
@@ -33,7 +33,7 @@ async function ValidateAdmin() {
     } catch (error) {
         console.error("ValidateAdmin error:", error);
         localStorage.removeItem("impact_admin");
-        window.location.href = "../admin-login";
+        window.location.href = "https://nx7-vault-core.impactacademy.site";
         return { success: false, admin: null };
     }
 }
