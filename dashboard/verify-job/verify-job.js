@@ -18,6 +18,7 @@ async function ValidateAdmin() {
 
         if (data.admin) {
             localStorage.setItem("impact_admin", JSON.stringify(data.admin));
+            console.log("Admin validated:", data.admin);
         }
 
         return { success: true, admin: data.admin };

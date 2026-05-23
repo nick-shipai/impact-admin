@@ -596,5 +596,5 @@ function GoToVerifyJob(jobId) {
         return;
     }
 
-    window.location.href = `./verify-job/?jobId=${encodeURIComponent(jobId)}`;
+    window.location.href = `../dashboard/verify-job/?jobId=${encodeURIComponent(jobId)}`;
 }
